@@ -2,7 +2,7 @@ import logo from "../assets/images/logo.png";
 
 const Sidebar = () => {
   return (
-    <div className="w-[250px] bg-[#0D0D0D] flex flex-col justify-between py-6 px-4 h-full">
+    <div className="w-[20%] bg-[#0D0D0D] flex flex-col justify-between py-6 px-4 min-h-full">
       <div>
         <div className="mb-8">
           <img src={logo} alt="logo" className="w-full max-w-[180px]" />
