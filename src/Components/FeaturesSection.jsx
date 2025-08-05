@@ -57,14 +57,16 @@ const FeaturesSection = () => {
   };
 
   return (
-    <section className="px-6 py-16 bg-[#0B0B0B] text-white">
+    <section className="px-4 sm:px-6 pt-8 sm:pt-12 pb-12 sm:pb-16 bg-[#0B0B0B] text-white">
       {/* Top Titles */}
-      <div className="text-center mb-12 max-w-3xl mx-auto">
-        <h2 className="text-4xl font-bold mb-2">Our Dynamic Services Suite!</h2>
-        <p className="text-xl text-gray-300 mb-3">
+      <div className="text-center mb-10 sm:mb-12 max-w-3xl mx-auto">
+        <h2 className="text-3xl sm:text-4xl font-bold mb-2">
+          Our Dynamic Services Suite!
+        </h2>
+        <p className="text-lg sm:text-xl text-gray-300 mb-3">
           Embrace Innovation: Let’s Create Together!
         </p>
-        <p className="text-gray-400">
+        <p className="text-gray-400 text-sm sm:text-base">
           Step into innovation! Explore our range of services and let’s create
           something extraordinary together.
           <br />
@@ -73,7 +75,7 @@ const FeaturesSection = () => {
       </div>
 
       {/* Main Content */}
-      <div className="flex flex-col lg:flex-row items-start justify-between gap-12">
+      <div className="flex flex-col lg:flex-row items-start justify-between gap-10 sm:gap-12">
         {/* Left Side */}
         <div className="lg:w-1/2 space-y-6">
           {services.map((service, index) => (
@@ -83,15 +85,15 @@ const FeaturesSection = () => {
               className="cursor-pointer border-b border-gray-700 pb-4"
             >
               <div className="flex justify-between items-center">
-                <h3 className="text-2xl font-semibold">{service.title}</h3>
+                <h3 className="text-lg sm:text-2xl font-semibold">
+                  {service.title}
+                </h3>
                 {openIndex === index ? <Minus size={20} /> : <Plus size={20} />}
               </div>
-
-              {/* Accordion Content */}
               {openIndex === index && service.description && (
-                <p className="text-gray-400 text-base mt-2">
+                <p className="text-gray-400 text-sm sm:text-base mt-2">
                   {service.description}
-                  <span className="text-cyan-400 underline cursor-pointer hover:text-cyan-300">
+                  <span className="text-cyan-400 underline cursor-pointer hover:text-cyan-300 ml-1">
                     {service.linkText}
                   </span>
                 </p>
@@ -105,7 +107,7 @@ const FeaturesSection = () => {
           <img
             src={featureImg}
             alt="Features visual"
-            className="rounded-lg shadow-lg w-full h-fixed object-cover"
+            className="rounded-lg shadow-lg w-full h-auto object-cover"
           />
         </div>
       </div>

@@ -23,30 +23,26 @@ const HeroSection = () => {
       <div className="lg:w-[60%] w-full h-full">
         {/* Background Image (fills right half only) */}
         <div className="w-full flex items-center relative">
-            <img
-          src={codeImg}
-          alt="Code background"
-          className="object-contain w-[90%] h-[90%] mt-[3rem]"
-        />
-         <img
-          src={codeImg1}
-          alt="Floating Code Window 1"
-          className="absolute top-[50%] right-1 z-10 rounded shadow-xl"
-        />
-         <img
-          src={codeImg2}
-          alt="Floating Code Window 2"
-          className="absolute -bottom-[25%] right-[10%] z-10 rounded shadow-xl"
-        />
+          <img
+            src={codeImg}
+            alt="Code background"
+            className="object-contain w-[90%] h-[90%] mt-[3rem]"
+          />
+          <img
+            src={codeImg1}
+            alt="Floating Code Window 1"
+            className="absolute top-[50%] right-1 z-10 rounded shadow-xl"
+          />
+          <img
+            src={codeImg2}
+            alt="Floating Code Window 2"
+            className="absolute -bottom-[25%] right-[10%] z-10 rounded shadow-xl"
+          />
         </div>
-        
-       
 
         {/* Floating Code Image - Top Right */}
-       
 
         {/* Floating Code Image - Bottom Left */}
-       
       </div>
     </section>
   );

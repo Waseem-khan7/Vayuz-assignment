@@ -1,12 +1,10 @@
 const ContactSection = () => {
   return (
-    <section className="px-6 py-16 bg-[#0B0B0B] text-white">
-      {/* Main Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+    <section className="px-4 sm:px-6 py-12 sm:py-16 bg-[#0B0B0B] text-white">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12">
         {/* Left Side */}
-        <div className="space-y-10">
-          {/* Top Menu Row */}
-          <div className="flex flex-wrap justify-center lg:justify-start gap-6 text-lg">
+        <div className="space-y-8 sm:space-y-10">
+          <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 text-base sm:text-lg">
             {["Events", "Gen AI", "Careers", "Case study", "SME Talks"].map(
               (item, i) => (
                 <span
@@ -18,25 +16,23 @@ const ContactSection = () => {
               )
             )}
           </div>
-
-          {/* Text Below Menu */}
           <div>
-            <p className="text-3xl lg:text-4xl font-light leading-relaxed mb-4">
+            <p className="text-2xl sm:text-3xl lg:text-4xl font-light leading-relaxed mb-4">
               For any collaborative projects or enquiries feel free to connect
               with us.
             </p>
-            <p className="text-2xl text-white">vayuz.com</p>
+            <p className="text-xl sm:text-2xl text-white">vayuz.com</p>
           </div>
         </div>
 
-        {/* Right Side - Form */}
+        {/* Right Side */}
         <div>
-          <h2 className="text-5xl font-bold mb-8 text-right">
+          <h2 className="text-4xl sm:text-5xl font-bold mb-6 sm:mb-8 text-center lg:text-right">
             Connect
             <br />
             With Us
           </h2>
-          <form className="space-y-6">
+          <form className="space-y-5 sm:space-y-6">
             <input
               type="text"
               placeholder="Full Name"
@@ -54,7 +50,7 @@ const ContactSection = () => {
             />
             <button
               type="submit"
-              className="mt-4 px-8 py-3 bg-cyan-600 hover:bg-cyan-700 rounded-full text-white font-semibold float-right"
+              className="mt-2 sm:mt-4 px-6 sm:px-8 py-2 sm:py-3 bg-cyan-600 hover:bg-cyan-700 rounded-full text-white font-semibold float-right"
             >
               SUBMIT
             </button>

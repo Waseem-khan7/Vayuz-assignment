@@ -3,7 +3,7 @@
 const Footer = () => {
   return (
     <footer className="bg-[#0B0B0B] text-white py-6 px-4">
-      <div className="max-w-6xl mx-auto flex flex-wrap justify-start gap-10 text-lg">
+      <div className="max-w-6xl mx-auto flex flex-col sm:flex-row flex-wrap justify-start gap-4 sm:gap-10 text-base sm:text-lg text-center sm:text-left">
         {["About", "Insights", "Community", "Privacy & Policies"].map(
           (link, i) => (
             <a
